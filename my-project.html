@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" text="text/css" href="assets/css/style.css"> 
+<title>My Project</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <ul>
+                <li>
+                    <img src="./assets/images/logo.png" alt="logo"/>
+                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="my-project.html">My Project</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <a href="contact-me.html">Contact Me</a>
+        </div>
+    </nav>
+    <div class="myproject-form">
+        <form onsubmit="getProject(event)">
+        <h1>ADD MY PROJECT</h1>
+        <div>
+            <label>Project Name</label>
+            <input type="text" id="project-name" placeholder="Enter the Project Name">
+        </div>
+        <div class="input-date">
+            <div>
+                <label>Start Date</label>
+                <input class="date" type="date" id="project-start">
+            </div>
+            <div>
+                <label>End Date</label>
+                <input class="date" type="date" id="project-end">
+            </div>
+        </div>
+        <div>
+            <label>Description</label>
+            <textarea id="project-desc" placeholder="Enter Description not more than 20 word"></textarea>
+        </div>
+        <div class="input-checkbox">
+            <label>Technologies</label>
+            <div >
+                <div>
+                    <input type="checkbox" value="Node" id="node">
+                    <p>Node Js</p>
+                </div>
+                <div>
+                    <input type="checkbox" value="React" id="react">
+                    <p>React Js</p>
+                </div>
+            </div>
+            <div class="checkbox-right">
+                <div>
+                    <input type="checkbox" value="Next" id="next"> 
+                    <p>Next Js</p>
+                </div>
+                <div>
+                    <input type="checkbox" value="TypeScript" id="typescript"> 
+                    <p>TypeScript</p>
+                </div>
+            </div>
+        </div>
+        <div class="input-upload">
+            <label>Upload Image</label>
+            <input type="file" id="img-file">
+        </div>
+        <div class="submit">
+            <button>Submit</button>
+        </div>
+        <hr/>
+    </form>
+    </div>
+    <div class="myproject-list">
+        <h2>My Project</h2>
+        <div class="myproject-cardlist" id="project-list">
+            <div class="myproject-card">
+                <img src="assets/images/example-post.png" style="height: 200px;" alt="posted">
+                <a style="font-weight: bold; cursor: pointer;" href="detail-project.html">Facebook Mobile App - 2019</a>
+                <p style="color: #8d8d8d;">durasi : 3 bulan</p>
+                <div class="desc-project">
+                    <p> App that used for social media,it was deployed by Engineer Haikal and can downloaded on playstore</p>
+                </div>
+                <div class="tech-used">
+                    <img src="assets/images/atom.png">
+                    <img src="assets/images/nodejs.png">
+                    <img src="assets/images/next-js.png">
+                    <img src="assets/images/typescript.png">
+                </div>
+                <div style="display: flex; ">
+                    <button class="action">edit</button>
+                    <button class="action">delete</button>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

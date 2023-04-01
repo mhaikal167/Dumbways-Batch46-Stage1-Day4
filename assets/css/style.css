@@ -1,0 +1,379 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #dbdbdb !important;
+}
+/* navbar styling */
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #e9e9e4;
+    height: 50px;
+    width: 100%;
+    top: 0px;
+}
+
+.nav-left img {
+    height: 30px;
+}
+
+.nav-left a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+.nav-left a:hover {
+    text-decoration: underline;
+}
+.nav-left ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-left img {
+    margin-right: 30px;
+}
+
+.nav-left ul li {
+    margin-right: 30px;
+}
+
+.nav-right a {
+    background-color: black;
+    color: white;
+    padding: 5px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+.nav-right a:hover{
+    background-color: #c0731c;
+}
+
+
+
+/* form styling */
+
+.main-cointainer{
+    margin: 50px auto;
+    width: 450px;
+    padding: 25px;
+}
+
+.main-cointainer h1 {
+    text-align: center;
+}
+
+.form div {
+    margin-top: 10px;
+}
+
+ 
+
+.form input,select {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #dbdbdb;
+    box-sizing:border-box;
+    box-shadow: 0 2px 5px black;
+}
+select {
+    appearance: none;
+    cursor: pointer;
+}
+input,select,textarea:focus{
+    outline: none;
+}
+.select{
+    display: grid;
+}
+
+.select::after{
+    content: "se";
+    width: 0.8em;
+    height: 0.5em;
+    background-color: var(--select-arrow);
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+}
+
+.triangle-down {
+    justify-self: end;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top:8px solid #6d6a6a;
+    position: absolute;
+    margin-top: 45px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+.form textarea {
+    width: 100%;
+    border-radius: 5px;
+    resize: none;
+    padding: 10px;
+    margin-top: 10px;
+    height: 100px;
+    box-sizing:border-box;
+    border: 1px solid #dbdbdb;
+    box-shadow: 0 2px 5px black;
+}
+
+label {
+    font-weight: bold;
+}
+
+button {
+    padding: 5px 40px;
+    border-radius: 15px;
+    border: none;
+    background-color: black;
+    color: white;
+    margin-top: 15px;
+    box-shadow: 0 2px 5px black;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c0731c;
+}
+
+.submit {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.main-card {
+    display: flex;
+    padding: 30px;
+    width: 75%;
+    border-radius: 8px;
+    margin: auto;
+    box-shadow: 0 0 15px grey;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+}
+
+.content-left {
+    width: 450px;
+    margin: auto;
+    padding-top: 10px;
+    background-color: white;
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+.card-contact {
+    background-color: #000;
+    color: white;
+    padding: 5px 20px 5px 20px;
+    border-radius: 15px;
+    text-decoration:none;
+    transition: 0.3s;
+}
+
+.card-contact:hover {
+    background-color: #c0731c;
+}
+.sosmed img {
+    width: 40px;
+    padding: 5px;
+}
+
+.photo-card {
+    width: 360px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #aea4a4;
+    padding-bottom: 10px;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.photo-card img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.content-right {
+    width: 50%;
+}
+
+.myproject-form {
+    width: 450px;
+    padding: 20px;
+    border-radius: 8px;
+    margin: auto;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+.myproject-form div{
+    margin-top: 10px;
+}
+
+.myproject-form input {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #dbdbdb;
+    box-sizing:border-box;
+    padding:8px;
+}
+
+.myproject-form h1 {
+    text-align: center;
+}
+
+.myproject-form textarea {
+    width: 100%;
+    resize: none;
+    border-radius: 5px;
+    height: 100px;
+    border: 1px solid #dbdbdb;
+    box-sizing:border-box;
+}
+
+.myproject-form hr {
+    border: 1px solid #dbdbdb;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    }
+
+.submit {
+    display: flex;
+}
+
+.action {
+    width: 100%;
+}
+
+.input-date {
+    display: flex;
+}
+
+.input-checkbox {
+    padding: 0px;
+}
+
+.input-checkbox div{
+    display: flex; 
+    width: 100%;
+    text-align: center;
+    padding: 0px 10px;
+    margin: auto;
+}
+
+.input-checkbox input{
+    box-shadow: none;
+    width: 20px;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+.myproject-list {
+    background: #fff;
+    border: 1px solid #dbdbdb;
+}
+
+
+.myproject-list h2 {
+    text-align: center;
+}
+
+.myproject-cardlist {
+    display: flex;
+    flex-wrap: wrap ;
+}
+
+.myproject-card {
+    width: 350px;
+    border: 1px solid #dbdbdb;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #aea4a4;   
+}
+.myproject-card a {
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+.myproject-card img{
+    width: 100%;    
+}
+
+.desc-project {
+    text-align: justify;
+}
+
+.action {
+    width: 100%;
+    display: flex;
+    margin: 10px;
+    text-align: center;
+}
+
+.tech-used {
+    display: flex;
+}
+
+.tech-used img {
+    width: 30px;
+    margin: 10px;
+}
+.detail-container {
+    background: #fff;
+    margin: auto;
+    
+}
+
+.header-detail {
+    display: flex;
+    justify-content: center;
+}
+
+.detail-photo {
+    object-fit: cover;
+    border-radius: 20px;
+    width: 400px;
+    height: 400px;
+    margin: 30px;
+}
+.technologies-used div{
+    display: flex; 
+    width: 100%;
+    text-align: center;
+    padding: 0px 10px;
+    margin: 5px;
+}
+
+.technologies-used p {
+    margin-left: 10px;
+}
+.detail-desc {
+    padding: 20px;
+    margin: 30px;
+}
+.duration img {
+    margin-top: 10px;
+    margin-right: 10px;
+   
+}
+
+
+
